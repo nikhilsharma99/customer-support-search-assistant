@@ -1,0 +1,22 @@
+[
+  {
+    "customer_name": "Maya",
+    "topic": "Refund request",
+    "message": "Customer asked how to get a refund after cancelling an order."
+  },
+  {
+    "customer_name": "Jonas",
+    "topic": "Password reset",
+    "message": "Customer cannot access the account and needs a password reset link."
+  },
+  {
+    "customer_name": "Amina",
+    "topic": "Shipping delay",
+    "message": "Customer wants an update because the package delivery is delayed."
+  },
+  {
+    "customer_name": "Lukas",
+    "topic": "Subscription cancellation",
+    "message": "Customer asked how to cancel the monthly subscription plan."
+  }
+]

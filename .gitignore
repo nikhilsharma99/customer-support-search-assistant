@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+data/support_conversations.json
+.env
+venv/
+.venv/
