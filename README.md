@@ -1,6 +1,6 @@
 # Customer Support Search Assistant
 
-A small Python backend-style portfolio project that stores customer-support conversations and lets users search them by relevance.
+A small Python backend-style project that stores customer-support conversations and lets users search them by relevance.
 
 This project demonstrates backend, data modeling, persistence, search logic, validation, and automated testing.
 
