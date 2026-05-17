@@ -68,9 +68,9 @@ if page == "Dashboard":
 
     st.subheader("Dashboard Charts")
 
-    col1, col2 = st.columns(2)
+    chart_col1, chart_col2 = st.columns(2)
 
-    with col1:
+    with chart_col1:
         category_counts = filtered_df["category"].value_counts().reset_index()
         category_counts.columns = ["category", "count"]
 
@@ -82,7 +82,7 @@ if page == "Dashboard":
         )
         st.plotly_chart(fig_category, use_container_width=True)
 
-    with col2:
+    with chart_col2:
         priority_counts = filtered_df["priority"].value_counts().reset_index()
         priority_counts.columns = ["priority", "count"]
 
@@ -100,10 +100,11 @@ if page == "Dashboard":
             },
         )
         st.plotly_chart(fig_priority, use_container_width=True)
-        st.subheader("Customer Sentiment Overview")
 
+    chart_col3, chart_col4 = st.columns(2)
+
+    with chart_col3:
         sentiment_df = filtered_df.copy()
-
         sentiment_df["sentiment"] = sentiment_df["issue_description"].apply(
             detect_sentiment
         )
@@ -123,9 +124,9 @@ if page == "Dashboard":
                 "Positive": "green",
             },
         )
-
         st.plotly_chart(fig_sentiment, use_container_width=True)
 
+    with chart_col4:
         status_counts = filtered_df["status"].value_counts().reset_index()
         status_counts.columns = ["status", "count"]
 
