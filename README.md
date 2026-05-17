@@ -4,6 +4,8 @@ A Python-based dashboard application for exploring, searching, and analyzing cus
 
 The project started as a simple customer support search tool and was later extended into an interactive dashboard with ticket filtering, analytics, visualizations, and basic AI-style assistance.
 
+Further development will focus on adding database integration, LLM-supported features, and migrating toward a more advanced, interactive UI.
+
 ## Problem
 
 Customer support teams often handle many tickets across different products, categories, priorities, and channels. It can be difficult to quickly understand common issues, find relevant tickets, and review important customer problems.
